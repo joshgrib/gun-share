@@ -4,6 +4,22 @@
   </head>
   <body>
     <p>TODO: create the app</p>
-    <code>bool done = false;</code>
+    <form>
+      <input id="new-message-input" type="text">
+      <button onclick="addMessage()">Add</button>
+    </form>
+    <p>Add some messages, then try reloading or opening in a new browser</p>
+    <p>Messages:</p>
+    <ul id="message-list">
+      <template id="message-template">
+        <li>
+          <button>[X]</button>
+          <span>Message content replaced here</span>
+        </li>
+      </template>
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
